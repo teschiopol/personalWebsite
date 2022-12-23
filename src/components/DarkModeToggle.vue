@@ -30,7 +30,7 @@
 
 <style>
   .button{
-    margin: 30px 0 30px;
+    margin: 30px 0;
     font-size: 15px;
   }
 </style>
