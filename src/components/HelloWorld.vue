@@ -15,28 +15,28 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  export default {
+    name: 'HelloWorld',
+    props: {
+      msg: String
+    }
   }
-}
 </script>
 
 <style scoped>
-h3 {
-  margin: 40px 0 20px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-.icon{
-  width: 25px;
-  height: 25px;
-}
+  h3 {
+    margin: 40px 0 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .icon{
+    width: 25px;
+    height: 25px;
+  }
 </style>
