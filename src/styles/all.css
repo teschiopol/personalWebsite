@@ -1,0 +1,23 @@
+@media screen and (min-width: 400px) {
+    .mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .desktop {
+        display: none !important;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.text{
+    color: var(--text);
+}

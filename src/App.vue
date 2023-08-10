@@ -1,31 +1,28 @@
 <template>
-  <img alt="Unicorne logo" src="./assets/logo.png"  style="width:256px;height:256px;" @click="toggle(!isDarkMode)">
-  <HelloWorld msg="Unicorne"/>
+  <Navbar />
+  <Home />
+  <Project />
+  <Stack />
+  <Contact />
+  <Footer />
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
-  import {onMounted, ref} from "vue";
-
+  import Navbar from "@/components/Navbar";
+  import Home from "@/components/Home";
+  import Project from "@/components/Project";
+  import Stack from "@/components/Stack";
+  import Contact from "@/components/Contact";
+  import Footer from "@/components/Footer";
   export default {
     name: 'App',
     components: {
-      HelloWorld
-    },
-    setup(){
-      const isDarkMode = ref(false);
-
-      const toggle = (payload) => {
-        isDarkMode.value = payload;
-        document.documentElement.className = payload;
-        localStorage.setItem('theme', payload);
-      }
-
-      onMounted(function(){
-        toggle(JSON.parse(localStorage.getItem('theme')));
-      });
-
-      return{isDarkMode, toggle}
+      Navbar,
+      Home,
+      Project,
+      Stack,
+      Contact,
+      Footer
     }
   }
 </script>
@@ -36,7 +33,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    margin-top: 60px;
   }
 
   * {
