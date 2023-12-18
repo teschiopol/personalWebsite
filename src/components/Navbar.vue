@@ -14,7 +14,7 @@
             <a href="#project">Projects</a>
           </div>
           <div style="width: 20%">
-            <a href="#stack">Stack</a>
+            <a href="#stack">Service</a>
           </div>
           <div style="width: 20%">
             <a href="#contact">Contact</a>
